@@ -2,7 +2,7 @@
 
 **Trio:** Juan Carlos, Henrique Soares, Vitor Moura
 
-**Site publicado:** ...
+**Site publicado:** https://festival-mpb.vercel.app/index.html
 
 ## Briefing
 
@@ -16,8 +16,8 @@
 
 **Sites inspiradores:** https://djavan.com.br/, https://www.ticketsforfun.com.br/, https://gilbertogil.com.br/
 
-## Antes e depois
-![Antes] (...)
-![Depois] (...)
-
-## Os 4 prompts que mais fizeram diferença
+## Os 4 prompts que mais fizeram diferença:
+1. Inclua a mesma paleta de cores em todas as paǵina(a paleta está no README.md)
+2. Coloque o mesmo footer e header em todas as páginas
+3. Não mude muito o CSS de página para outra página, use basicamente a mesma estrutura
+4. Sem erros
