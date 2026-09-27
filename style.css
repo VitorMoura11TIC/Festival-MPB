@@ -17,6 +17,7 @@ a { color: inherit; }
 .site-header { min-height: 76px; padding: 16px clamp(20px, 6vw, 88px); display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--brown); color: var(--cream); }
 .brand { font: 700 1.3rem var(--serif); text-decoration: none; white-space: nowrap; }
 .brand span { color: #e2a56f; }
+.brand img { display: block; width: 206px; height: auto; }
 .main-nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: clamp(14px, 2.4vw, 34px); }
 .main-nav a { color: var(--cream); text-decoration: none; font-size: .94rem; font-weight: 700; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { color: #e2a56f; }
@@ -57,6 +58,7 @@ a { color: inherit; }
 .site-footer { padding: 34px 24px; color: var(--cream); background: var(--brown); text-align: center; }
 .site-footer p { margin: 8px 0 16px; color: #eadbc7; }
 .site-footer small { color: #c9b49b; }
+.site-footer .brand img { width: 188px; margin: 0 auto; }
 
 @media (max-width: 700px) {
   .site-header { align-items: flex-start; flex-direction: column; }
@@ -243,4 +245,42 @@ a { color: inherit; }
 @media (max-width: 800px) {
   .faq-content { grid-template-columns: 1fr; }
   .contact-panel { max-width: 600px; }
+}
+
+/* Programação completa */
+.program-hero { padding: 70px 24px 66px; color: var(--cream); text-align: center; background: linear-gradient(135deg, #45290c, #623518 70%, #87411d); }
+.program-hero .eyebrow { color: #e2a56f; }
+.program-hero h1 { margin: 0; font: 700 clamp(2.8rem, 6vw, 4.8rem)/1.04 var(--serif); }
+.program-hero h1 em { color: #e2a56f; font-weight: 600; }
+.program-hero > p:not(.eyebrow) { max-width: 550px; margin: 18px auto 0; color: #eadbc7; font-size: 1.05rem; line-height: 1.6; }
+.program-content { width: min(980px, calc(100% - 40px)); margin: 0 auto; padding: 42px 0 84px; }
+.program-jump { position: sticky; z-index: 5; top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0 -12px 34px; padding: 12px; border-bottom: 1px solid rgba(69,41,12,.12); background: rgba(247,240,229,.96); backdrop-filter: blur(10px); }
+.program-jump a { padding: 8px 13px; border-radius: 30px; color: var(--blue); background: #fffaf2; font-size: .88rem; font-weight: 800; text-decoration: none; }
+.program-jump a:hover, .program-jump a:focus-visible { color: white; background: var(--rust); }
+.program-day { margin: 0 0 24px; padding: 26px 30px 20px; border: 1px solid rgba(69,41,12,.14); border-radius: 8px; background: var(--paper); box-shadow: 0 8px 24px rgba(69,41,12,.05); scroll-margin-top: 76px; }
+.program-day > header { display: flex; align-items: center; gap: 17px; margin-bottom: 16px; }
+.program-day > header > span { color: var(--rust); font: 700 2.7rem/.95 var(--serif); }
+.program-day header h2 { margin: 0; color: var(--blue); font: 700 1.45rem var(--serif); }
+.program-day header p { margin: 3px 0 0; color: #806b58; font-size: .87rem; }
+.program-day ol { margin: 0; padding: 0; list-style: none; }
+.program-day li { display: grid; grid-template-columns: 120px 1fr; gap: 14px; align-items: center; padding: 17px 4px; border-top: 1px solid rgba(69,41,12,.12); }
+.program-day li time { color: var(--rust); font-size: .93rem; font-weight: 800; }
+.program-day li h3, .rest-note h3 { margin: 0; color: var(--ink-blue); font: 700 1.15rem var(--serif); }
+.program-day li p, .rest-note p { margin: 4px 0 0; color: #806b58; font-size: .84rem; }
+.program-rest { background: #f0e3d1; }
+.rest-note { padding: 16px 4px 6px; border-top: 1px solid rgba(69,41,12,.12); }
+.program-encore { border-color: rgba(135,65,29,.3); background: #f0e3d1; }
+.program-note { max-width: 760px; margin: 25px auto 0; color: #806b58; font-size: .88rem; line-height: 1.6; text-align: center; }
+
+@media (max-width: 700px) {
+  .brand img { width: 188px; }
+  .site-header { gap: 15px; }
+  .main-nav { width: 100%; }
+  .main-nav a { font-size: .89rem; }
+  .program-content { width: min(100% - 28px, 980px); padding-top: 24px; }
+  .program-jump { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; margin-right: -14px; margin-left: -14px; }
+  .program-jump a { flex: 0 0 auto; }
+  .program-day { padding: 21px 18px 16px; }
+  .program-day li { grid-template-columns: 1fr; gap: 6px; }
+  .program-day li time { font-size: .85rem; }
 }

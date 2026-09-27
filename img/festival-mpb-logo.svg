@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="96" viewBox="0 0 420 96" role="img" aria-labelledby="title desc">
+  <title id="title">Festival MPB</title>
+  <desc id="desc">Logo do Festival MPB com sol nascente e ondas sonoras.</desc>
+  <g transform="translate(5 5)">
+    <circle cx="43" cy="43" r="41" fill="#87411d"/>
+    <path d="M15 54a28 28 0 0 1 56 0" fill="#e2a56f"/>
+    <path d="M12 58h62M19 66h48M27 74h32" fill="none" stroke="#098bc9" stroke-width="5" stroke-linecap="round"/>
+    <path d="M43 18v8M27 25l5 6M59 25l-5 6" fill="none" stroke="#fffaf2" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="103" y="47" fill="#fffaf2" font-family="Georgia,serif" font-size="34" font-weight="700">Festival</text>
+  <text x="104" y="79" fill="#e2a56f" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="5">MPB</text>
+</svg>
